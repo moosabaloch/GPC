@@ -39,7 +39,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.client_info_button:
-                showMessage("Client Info Work In Progress");
+                Intent intent2 = new Intent(this,ClientInfoActivity.class);
+                startActivity(intent2);
                 break;
             case R.id.event_information_button:
                 Intent intent = new Intent(this, EventInformation.class);

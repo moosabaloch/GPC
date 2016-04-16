@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/titleEventAdaptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@+id/dateEventAdaptor"
+        android:layout_toStartOf="@+id/dateEventAdaptor"
+        android:text="Title"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dateEventAdaptor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:text="Date"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/venueEventAdaptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleEventAdaptor"
+        android:layout_margin="10dp"
+        android:text="Venue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/budgetEventAdaptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/venueEventAdaptor"
+        android:layout_margin="10dp"
+        android:text="Budget" />
+
+    <TextView
+        android:id="@+id/statusEventAdaptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/budgetEventAdaptor"
+        android:layout_margin="10dp"
+        android:text="Status" />
+
+    <TextView
+        android:id="@+id/clientEventAdaptor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusEventAdaptor"
+        android:layout_margin="10dp"
+        android:text="Client" />
+</RelativeLayout>

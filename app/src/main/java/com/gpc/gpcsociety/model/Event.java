@@ -1,0 +1,126 @@
+package com.gpc.gpcsociety.model;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import java.util.ArrayList;
+
+/**
+ * Created by Moosa moosa.bh@gmail.com on 4/16/2016 16 April.
+ * Everything is possible in programming.
+ */
+public class Event implements Parcelable {
+    public static final Parcelable.Creator<Event> CREATOR = new Parcelable.Creator<Event>() {
+        @Override
+        public Event createFromParcel(Parcel source) {
+            return new Event(source);
+        }
+
+        @Override
+        public Event[] newArray(int size) {
+            return new Event[size];
+        }
+    };
+    private int id;
+    private String title;
+    private String date;
+    private String venue;
+    private int budget;
+    private ArrayList<Client> client;
+    private String status;
+
+    public Event() {
+    }
+
+    public Event(int id, String title, String date, String venue, int budget, ArrayList<Client> client, String status) {
+        this.id = id;
+        this.title = title;
+        this.date = date;
+        this.venue = venue;
+        this.budget = budget;
+        this.client = client;
+        this.status = status;
+    }
+
+    protected Event(Parcel in) {
+        this.id = in.readInt();
+        this.title = in.readString();
+        this.date = in.readString();
+        this.venue = in.readString();
+        this.budget = in.readInt();
+        this.client = in.createTypedArrayList(Client.CREATOR);
+        this.status = in.readString();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getVenue() {
+        return venue;
+    }
+
+    public void setVenue(String venue) {
+        this.venue = venue;
+    }
+
+    public int getBudget() {
+        return budget;
+    }
+
+    public void setBudget(int budget) {
+        this.budget = budget;
+    }
+
+    public ArrayList<Client> getClient() {
+        return client;
+    }
+
+    public void setClient(ArrayList<Client> client) {
+        this.client = client;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(this.id);
+        dest.writeString(this.title);
+        dest.writeString(this.date);
+        dest.writeString(this.venue);
+        dest.writeInt(this.budget);
+        dest.writeTypedList(client);
+        dest.writeString(this.status);
+    }
+}

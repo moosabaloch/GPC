@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GPC Society</string>
+    <string name="gpc_society">GPC Society</string>
+    <string name="client_information">Client Information</string>
+    <string name="team_information">Team Information</string>
+    <string name="event_information">Event Information</string>
+    <string name="payment_information">Payment Information</string>
+    <string name="event_task">Event Task</string>
+    <string name="event_task_costing">Event Task Costing</string>
+</resources>

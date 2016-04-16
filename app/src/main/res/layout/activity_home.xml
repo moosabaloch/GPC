@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    tools:context="com.gpc.gpcsociety.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gpc_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/gpc_society"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/client_info_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:text="@string/client_information"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/event_information_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/computer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:text="@string/event_information"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/payment_information_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/three" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:text="@string/payment_information"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/event_task_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/inter" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:text="@string/event_task"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/event_task_costing_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/commerce" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:text="@string/event_task_costing"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/team_information_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/people" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:text="@string/team_information"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+
+</ScrollView>

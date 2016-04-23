@@ -68,7 +68,7 @@ public class AdaptorEventInformation extends BaseAdapter {
         view.date.setText(date);
         String budget = "Budget: " + event.getBudget();
         view.budget.setText(budget);
-        String client = "Client: " + event.getClient().get(position).getName();
+        String client = "Client: " + event.getClient().getName();
         view.clientName.setText(client);
 
 

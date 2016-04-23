@@ -8,16 +8,26 @@ import android.os.Parcelable;
  * Everything is possible in programming.
  */
 public class Client implements Parcelable {
-    private int id;
+    public Client() {
+    }
+
+    public Client(String id, String name, String phone, String address) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.address = address;
+    }
+
+    private String id;
     private String name;
     private String phone;
     private String address;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -45,16 +55,6 @@ public class Client implements Parcelable {
         this.address = address;
     }
 
-    public Client() {
-    }
-
-    public Client(int id, String name, String phone, String address) {
-        this.id = id;
-        this.name = name;
-        this.phone = phone;
-        this.address = address;
-    }
-
     @Override
     public int describeContents() {
         return 0;
@@ -62,14 +62,14 @@ public class Client implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(this.id);
+        dest.writeString(this.id);
         dest.writeString(this.name);
         dest.writeString(this.phone);
         dest.writeString(this.address);
     }
 
     protected Client(Parcel in) {
-        this.id = in.readInt();
+        this.id = in.readString();
         this.name = in.readString();
         this.phone = in.readString();
         this.address = in.readString();

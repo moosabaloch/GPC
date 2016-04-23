@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gpc.gpcsociety">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".AppController"
         android:allowBackup="true"
@@ -17,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".EventInformation" />
-        <activity android:name=".ClientInfoActivity"></activity>
+        <activity android:name=".ClientInfoActivity" />
+        <activity android:name=".AddEventActivity"></activity>
     </application>
 
 </manifest>

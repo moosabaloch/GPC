@@ -7,4 +7,41 @@
     <string name="payment_information">Payment Information</string>
     <string name="event_task">Event Task</string>
     <string name="event_task_costing">Event Task Costing</string>
+    <string name="add_client">Add Client</string>
+
+
+    <string name="date_util_term_less">less than</string>
+    <string name="date_util_term_a">a</string>
+    <string name="date_util_term_an">an</string>
+
+    <string name="date_util_unit_second">second</string>
+    <string name="date_util_unit_seconds">seconds</string>
+    <string name="date_util_unit_minute">minute</string>
+    <string name="date_util_unit_minutes">minutes</string>
+    <string name="date_util_unit_hour">hour</string>
+    <string name="date_util_unit_hours">hours</string>
+    <string name="date_util_unit_day">day</string>
+    <string name="date_util_unit_days">days</string>
+    <string name="date_util_unit_month">month</string>
+    <string name="date_util_unit_months">months</string>
+    <string name="date_util_unit_year">year</string>
+    <string name="date_util_unit_years">years</string>
+
+    <string name="date_util_prefix_lt">less than a</string>
+    <string name="date_util_prefix_about">about</string>
+    <string name="date_util_prefix_over">over</string>
+    <string name="date_util_prefix_almost">almost</string>
+
+    <string name="date_util_suffix">ago</string>
+    <string name="client_name">Client Name</string>
+    <string name="client_number">Client Number</string>
+    <string name="client_location">Client Location</string>
+    <string name="event_title">Event Title</string>
+    <string name="event_date">Event Date</string>
+    <string name="event_venue">Event Venue</string>
+    <string name="event_budget">Event Budget</string>
+    <string name="event_status">Event Status</string>
+    <string name="submit">Submit</string>
+    <string name="add_event">Add Event</string>
+
 </resources>

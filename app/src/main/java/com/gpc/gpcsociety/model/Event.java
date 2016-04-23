@@ -3,8 +3,6 @@ package com.gpc.gpcsociety.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.util.ArrayList;
-
 /**
  * Created by Moosa moosa.bh@gmail.com on 4/16/2016 16 April.
  * Everything is possible in programming.
@@ -21,18 +19,15 @@ public class Event implements Parcelable {
             return new Event[size];
         }
     };
-    private int id;
+    private String id;
     private String title;
     private String date;
     private String venue;
     private int budget;
-    private ArrayList<Client> client;
+    private Client client;
     private String status;
 
-    public Event() {
-    }
-
-    public Event(int id, String title, String date, String venue, int budget, ArrayList<Client> client, String status) {
+    public Event(String id, String title, String date, String venue, int budget, Client client, String status) {
         this.id = id;
         this.title = title;
         this.date = date;
@@ -42,21 +37,24 @@ public class Event implements Parcelable {
         this.status = status;
     }
 
+    public Event() {
+    }
+
     protected Event(Parcel in) {
-        this.id = in.readInt();
+        this.id = in.readString();
         this.title = in.readString();
         this.date = in.readString();
         this.venue = in.readString();
         this.budget = in.readInt();
-        this.client = in.createTypedArrayList(Client.CREATOR);
+        this.client = in.readParcelable(Client.class.getClassLoader());
         this.status = in.readString();
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -92,11 +90,11 @@ public class Event implements Parcelable {
         this.budget = budget;
     }
 
-    public ArrayList<Client> getClient() {
+    public Client getClient() {
         return client;
     }
 
-    public void setClient(ArrayList<Client> client) {
+    public void setClient(Client client) {
         this.client = client;
     }
 
@@ -115,12 +113,12 @@ public class Event implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeInt(this.id);
+        dest.writeString(this.id);
         dest.writeString(this.title);
         dest.writeString(this.date);
         dest.writeString(this.venue);
         dest.writeInt(this.budget);
-        dest.writeTypedList(client);
+        dest.writeParcelable(this.client, flags);
         dest.writeString(this.status);
     }
 }
